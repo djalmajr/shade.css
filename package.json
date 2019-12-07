@@ -1,0 +1,58 @@
+{
+  "name": "shade.css",
+  "version": "0.0.1",
+  "homepage": "http://djalmajr.github.io/shade.css",
+  "author": "Djalma Jr. <djalmajr@gmail.com>",
+  "description": "shade.css: A lightweight, responsive and modern CSS framework",
+  "main": "dist/shade.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djalmajr/shade.css.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "framework",
+    "flexbox",
+    "responsive",
+    "mobile-friendly",
+    "front-end",
+    "less",
+    "modern"
+  ],
+  "bugs": {
+    "url": "https://github.com/djalmajr/shade.css/issues"
+  },
+  "scripts": {
+    "build": "gulp",
+    "postversion": "git push && git push --tags",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-sass": "latest",
+    "gulp-rename": "latest",
+    "prettier": "^1.19.1",
+    "stylelint": "^12.0.0",
+    "stylelint-prettier": "^1.1.1"
+  },
+  "browserslist": [
+    "last 4 Chrome versions",
+    "Edge >= 12",
+    "Firefox ESR",
+    "last 4 Safari versions",
+    "last 4 Opera versions",
+    "Explorer >= 10"
+  ],
+  "stylelint": {
+    "plugins": [
+      "stylelint-prettier"
+    ],
+    "rules": {
+      "prettier/prettier": true
+    }
+  }
+}

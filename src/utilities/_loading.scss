@@ -1,0 +1,50 @@
+// Loading
+
+$loading-prefix: get-prefix(loading);
+
+.#{$loading-prefix} {
+  color: transparent !important;
+  min-height: $loading-size;
+  pointer-events: none;
+  position: relative;
+
+  &::after {
+    animation: loading $loading-speed infinite linear;
+    border: $loading-border-width solid $primary-color;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: $loading-size;
+    left: 50%;
+    margin-left: -$loading-size / 2;
+    margin-top: -$loading-size / 2;
+    position: absolute;
+    top: 50%;
+    width: $loading-size;
+    z-index: $zindex-0;
+  }
+
+  &.#{$loading-prefix}-md {
+    min-height: $loading-size-md;
+
+    &::after {
+      height: $loading-size-md;
+      margin-left: -$loading-size-md / 2;
+      margin-top: -$loading-size-md / 2;
+      width: $loading-size-md;
+    }
+  }
+
+  &.#{$loading-prefix}-lg {
+    min-height: $loading-size-lg;
+
+    &::after {
+      height: $loading-size-lg;
+      margin-left: -$loading-size-lg / 2;
+      margin-top: -$loading-size-lg / 2;
+      width: $loading-size-lg;
+    }
+  }
+}

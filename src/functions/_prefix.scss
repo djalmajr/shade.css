@@ -1,0 +1,3 @@
+@function get-prefix($suffix) {
+  @return if($shade-prefix != "", #{$shade-prefix}-#{$suffix}, $suffix);
+}
